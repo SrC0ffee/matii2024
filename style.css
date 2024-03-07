@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Protest+Strike&family=Sixtyfour&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&family=Sixtyfour&display=swap');
+
+:root{
+    --azul: #3FAEFF;
+    --branco: #FFFFFF;
+    --batv: #3A375E;
+    --bdes:#3A375E; /* 50% de transparência*/
+
+}
+
+body{
+    background-image: url(fundo.jpg);
+    color: #FFFFFF;
+}
+
+h1{
+    color: var(--branco);
+    font-family: "Sixtyfour", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "BLED" 0,
+      "SCAN" 0;
+}
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+span{
+    color: var(--azul);
+}
+
+.botao {
+    font-family: "Bebas Neue", sans-serif;
+    background-color: var(--bdes);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+    width: 300px;
+    border-bottom: 4px solid var(--batv); 
+    border-left: 2px solid var(--batv); 
+    border-right: 2px solid var(--batv); 
+    border-top: none;
+    opacity: 50%;
+
+}
+
+
+.botao:first-child{
+    border-radius: 40px 0 0 0;
+}
+
+.botao:last-child{
+    border-radius: 0 40px 0 0;
+}
+
+.botao.ativo{
+    opacity: 100%;
+    border-bottom: 4px solid var(--azul);
+}
+.abas-conteudo.ativo{
+    display: block;
+}
+
+.abas-conteudo{
+display: none;
+}
+
+.abas-textos{
+    background-color: #3A375E;
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+}
+
+.aba-conteudo-titulo1{
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.aba-conteudo-titulo2{
+    text-align: center;
+    color: var(--azul);
+    text-transform: uppercase;
+}
+
+/*.contador{
+    font-size: 20px;
+    text-align: center;
+}*/
+
+.contador{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contador-digito{
+    padding: 0 16px;
+    text-align: center;
+    min-width: 100px;
+}
+
+.contador-digito-numero{
+    font-size: 80px;
+    margin: 0;
+}
+
+.contador-digito-texto{
+    color: var(--azul);
+    font-size: 22px;
+    margin: 0;
+}
+
+
+@media screen and (min-width: 768px){
+    .botoes{
+        display: flex;
+    }
+
+    .botao:first-child{
+        border-radius: 40px 0 0 0;
+    }
+
+    .botao:last-child{
+        border-radius: 0 40px 0 0;
+    }
+}
